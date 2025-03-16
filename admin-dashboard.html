@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo</title>
+    <link rel="stylesheet" href="admin-dashboard.css">
+</head>
+<body>
+    <div class="admin-container">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://i.postimg.cc/2ytcvrQz/Picsart-25-03-14-20-51-02-212.png" alt="Logo" class="navbar-logo">
+            </div>
+            <div class="menu-icon" id="menuIcon">
+                <span>&#9776;</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="logout.html">Sair</a></li>
+            </ul>
+        </nav>
+
+        <header>
+            <h1>Bem-vindo ao Painel Administrativo!</h1>
+        </header>
+
+        <main>
+            <div class="dashboard">
+                <h2>Gerenciamento de Produtos</h2>
+                <button id="addProductBtn">Adicionar Produto</button>
+                <div id="productsList">
+                    <!-- Lista de produtos aparecerá aqui -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="firebase-config.js"></script>
+    <script src="admin-dashboard.js"></script>
+</body>
+</html>

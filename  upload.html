@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Produto</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+
+    <header>
+        <h1>Adicionar Produto</h1>
+        <a href="index.html" class="btn">Voltar</a>
+    </header>
+
+    <div class="container">
+        <form id="uploadForm">
+            <input type="text" id="productName" placeholder="Nome do Produto" required>
+            <input type="number" id="productPrice" placeholder="Preço (MZN)" required>
+            <input type="file" id="productImage" accept="image/*" required>
+            <img id="previewImage" class="upload-preview" style="display: none;">
+            <button type="submit">Enviar Produto</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="auth.js"></script>
+    <script src="firebase-config.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Navbar Hambúrguer -->
+    <nav class="navbar">
+        <div class="logo">
+            <!-- Ícone de Imagem à Esquerda -->
+            <img src="https://i.postimg.cc/2ytcvrQz/Picsart-25-03-14-20-51-02-212.png" alt="Logo" class="navbar-logo">
+        </div>
+        <div class="menu-icon" id="menuIcon">
+            <span>&#9776;</span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Cadastrar</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>STELLMODS POR VOCÊ!</h1>
+    </header>
+
+    <main>
+        <h2>Produtos</h2>
+        <div class="products-container" id="productsContainer">
+            <!-- Produtos serão carregados aqui dinamicamente -->
+        </div>
+    </main>
+
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Código para mostrar/ocultar o menu hambúrguer
+        const menuIcon = document.getElementById("menuIcon");
+        const navLinks = document.getElementById("navLinks");
+
+        menuIcon.addEventListener("click", function() {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
